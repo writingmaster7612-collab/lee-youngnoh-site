@@ -1,0 +1,3 @@
+# 사이트 방문자에게 보일 필요가 없는 파일은 배포에서 뺀다
+JinnyDESIGN.md
+apps-script
