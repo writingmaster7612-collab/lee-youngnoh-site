@@ -163,14 +163,15 @@
 
   /* 언론 */
   .press { display: grid; grid-template-columns: repeat(2, 1fr); gap: var(--gap); }
-  .press a {
+  .press a, .press .press-item {
     display: block; text-decoration: none; background: #fff;
     border: 1px solid var(--line); border-radius: 18px; padding: 28px;
   }
   .press a:hover { border-color: var(--accent); }
   .press .src { font-size: 13px; color: var(--accent); font-weight: 700; }
   .press h3 { font-size: 17px; font-weight: 700; margin: 6px 0 8px; line-height: 1.45; }
-  .press p { margin: 0; font-size: 14px; color: var(--muted); }
+  .press blockquote { margin: 0 0 12px; padding-left: 12px; border-left: 3px solid var(--accent); font-size: 15px; line-height: 1.6; color: var(--ink); }
+  .press p { margin: 0; font-size: 13px; color: var(--sub); }
   .orgs { margin-top: 32px; display: flex; flex-wrap: wrap; gap: 10px; }
   .orgs span { background: #fff; border: 1px solid var(--line-strong); border-radius: 999px; padding: 9px 16px; font-size: 13.5px; }
 
@@ -372,22 +373,33 @@
         <a href="https://www.seoul.co.kr/news/economy/2010/05/06/20100506008016" target="_blank" rel="noopener">
           <div class="src">서울신문 · 2010.05.06</div>
           <h3>"철저한 현지화·차별화" '글로벌 롯데' 힘찬 순항</h3>
-          <p>롯데마트 베트남법인 팀장 · 베트남 주재원 시절</p>
+          <blockquote>"주말이면 방문객이 평일의 3배나 되고 구매고객이 1만 2000명에 이른다."</blockquote>
+          <p>이영노 롯데마트 베트남법인 팀장 · 베트남 주재원 시절</p>
         </a>
+        <!-- 원문 주소를 확인하면 div를 a로 바꿔 링크를 건다 -->
+        <div class="press-item">
+          <div class="src">한겨레 · 2010.05.30</div>
+          <h3>유통업체 '베트남의 취향' 섬세히 파고든다</h3>
+          <blockquote>"현대적 슈퍼마켓, 대형마트 등이 1995년엔 베트남 전체를 통틀어 10개였지만 2008년 말 400개로 급증했다"</blockquote>
+          <p>이영노 롯데마트 영업총괄팀장 · 베트남 주재원 시절</p>
+        </div>
         <a href="https://www.inthenews.co.kr/news/article.html?no=7857" target="_blank" rel="noopener">
           <div class="src">인더뉴스 · 2017.04.24</div>
           <h3>'토이저러스 단독 판매'… 롯데마트, 어린이날 완구 기획전</h3>
-          <p>롯데마트 토이저러스 팀장 · 단독 상품 런칭</p>
+          <blockquote>"세계 최대 장난감 전문점인 토이저러스를 활용해 다양한 완구 상품을 선보이겠다."</blockquote>
+          <p>이영노 롯데마트 토이저러스 팀장 · 단독 상품 런칭</p>
         </a>
         <a href="https://www.fnnews.com/news/202507201406370737" target="_blank" rel="noopener">
           <div class="src">파이낸셜뉴스 · 2025.07.20</div>
           <h3>롯데몰 광명점에 들어선 키즈&amp;키덜트 체험형 '토이저러스'</h3>
-          <p>롯데마트 TRU부문장 · 체험형 매장 구성</p>
+          <blockquote>"차별화된 요소를 집약해 아이부터 어른까지 모두가 즐길 수 있는 공간으로 기획됐다."</blockquote>
+          <p>이영노 롯데마트 TRU부문장 · 체험형 매장 구성</p>
         </a>
         <a href="https://www.ntoday.co.kr/news/articleView.html?idxno=129647" target="_blank" rel="noopener">
           <div class="src">투데이신문 · 2026.09.24</div>
           <h3>나흘뿐인 추석, 유통가는 '짧을수록 화끈하게'</h3>
-          <p>롯데마트 TRU부문장 · 최근 인터뷰</p>
+          <blockquote>"명절은 어린이날과 연말 다음으로 완구 수요가 집중되는 핵심 성수기"</blockquote>
+          <p>이영노 롯데마트 TRU부문장 · 최근 인터뷰</p>
         </a>
       </div>
       <div class="orgs">
